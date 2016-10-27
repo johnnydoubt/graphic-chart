@@ -1,0 +1,65 @@
+.buttonsobre {
+  font-size: 20px;
+}
+
+.button {
+  font-style: italic;
+  font-size: 25px;
+  border: 1px dashed grey;
+}
+.buttonvalider {
+
+    background-color: #c6e076;
+
+}
+
+.buttonannuler {
+
+    background-color: #ff816d;
+
+}
+
+a {
+    color: #8ecbd1;
+}
+
+.buttonsobre:hover {
+    font-weight: bolder;
+    text-shadow: 1px 1px #48a04f;
+}
+
+.buttonvalider:hover {
+    background-color: #48a04f;
+}
+
+.buttonannuler:hover {
+    background-color: #FF0000;
+     transition: background-color 1s;
+}
+
+/* On montre le premier texte */
+
+.text-base {
+    opacity: 1;
+}
+
+/* On cache le second texte */
+
+.text-hover {
+    display: none;
+}
+
+/* On fait disparaitre le premier texte au passage de la souris. */
+
+.buttonannuler:hover span.text-base {
+    opacity: 0;
+}
+/* On fait apparaitre le second texte au passage de la souris. */
+
+.buttonannuler:hover span.text-hover {
+  font-style: normal;
+    display: inherit;
+    position: absolute;
+    font-weight: bolder;
+
+}
